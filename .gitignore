@@ -1,0 +1,10 @@
+/build/
+.DS_Store
+
+# Earlier icon drafts kept locally.
+/Assets/MagicPinch.png
+/Assets/MagicPinch.icns
+/Assets/MagicPinch-black.*
+/Assets/MagicPinch-refined.*
+/Assets/MagicPinch-slim.*
+/Assets/MagicPinch-trueform.*
