@@ -10,12 +10,20 @@ Magic Pinch brings two-finger pinch-to-zoom to the Apple Magic Mouse on macOS. S
 
 ## Requirements
 
-- macOS 27 or later and a Magic Mouse with a Multi-Touch surface.
-- Xcode Command Line Tools to build the app.
+- An Apple silicon Mac running macOS 27 or later.
+- A Magic Mouse with a Multi-Touch surface.
 
 ## Install
 
-Build Magic Pinch from source:
+1. Download the `.dmg` from the [latest release](https://github.com/zchengb/magic-pinch/releases/latest).
+2. Open the disk image and drag **Magic Pinch** into **Applications**.
+3. Open **Magic Pinch** from Applications.
+
+The app uses an ad-hoc signature and is not notarized by Apple. If macOS blocks the app, see [Apple's instructions for opening an app from an unidentified developer](https://support.apple.com/en-us/102445). Only proceed if you trust the source. Updating the app may require granting its permissions again.
+
+## Build from source
+
+Install Xcode Command Line Tools, then run:
 
 ```sh
 git clone https://github.com/zchengb/magic-pinch.git
@@ -24,8 +32,6 @@ sh build.sh
 ```
 
 Move `build/Magic Pinch.app` to Applications, then open it. The build also runs the gesture, sensitivity, magnification event, and login-launch checks.
-
-The app is locally signed and not notarized. macOS may ask you to confirm that you want to open it. Updating the app may require granting its permissions again.
 
 ## Use
 
